@@ -19,9 +19,10 @@ const useStyles = makeStyles((theme) => ({
   },
    title: {
     flexGrow: 1,
+    alignItems: 'center',
     display: 'none',
     [theme.breakpoints.up('sm')]: {
-      display: 'block',
+      display: 'flex',
     },
   },
     search: {
@@ -83,7 +84,7 @@ const Navbar = () => {
             color="inherit"
             aria-label="open drawer"
           >
-            <MenuIcon  className={styles.Desktop}/>
+            <MenuIcon />
            
             <div className ={styles.dropdownContent}>
                     <a href="#">Link 1</a>
@@ -92,7 +93,7 @@ const Navbar = () => {
                     </div>   
           </IconButton>
           <MobileDrawer />      
-          <Typography className={classes.title} variant="h6" noWrap>
+          <Typography className={classes.title}  noWrap>
           <svg xmlns="http://www.w3.org/2000/svg" width="115" height="35" viewBox="0 0 115 35">
                 <defs>
                     <radialGradient id="prefix__a" cx="98.305%" cy="99.794%" r="263.393%" fx="98.305%" fy="99.794%" gradientTransform="matrix(.36145 0 0 1 .628 0)">
@@ -119,7 +120,17 @@ const Navbar = () => {
                     <path fill="#FFF" d="M101.553 17.892c1.222 0 2.248.453 2.897 1.403h.03v-1.177h1.569v8.358h-1.57V25.18h-.03c-.587.995-1.644 1.509-2.835 1.509-2.444 0-4.436-1.841-4.436-4.255 0-2.67 1.916-4.541 4.375-4.541zm-24.945 0c2.308 0 4.48 1.81 4.45 4.466-.03 2.276-1.974 4.411-4.728 4.327-2.335-.071-4.32-2.078-4.293-4.414.03-2.521 2.025-4.379 4.571-4.379zm12.643 0c1.388 0 2.52.966 2.565 2.444h-1.57c-.075-.603-.421-1.01-1.07-1.01-.604 0-.98.407-.98.89 0 .708.724.92 1.553 1.176 1.177.362 2.263 1.071 2.263 2.625 0 1.614-1.177 2.67-2.806 2.67-1.509 0-2.957-1.025-2.957-2.957h1.57c.075 1.012.587 1.524 1.417 1.524.724 0 1.207-.467 1.207-1.146 0-.574-.437-.95-1.418-1.268-2.052-.648-2.399-1.538-2.399-2.489 0-1.478 1.252-2.459 2.625-2.459zm-26.08-2.58c.867 0 1.57.703 1.57 1.57v2.127h.03c.498-.74 1.297-1.117 2.338-1.117 1.992 0 3.485 1.267 3.485 3.56v5.024h-1.569v-4.54c0-1.796-.694-2.61-2.081-2.61-1.373 0-2.203.995-2.203 2.625v4.525h-1.57V15.313zm21.237 0v2.806h1.373v1.434h-1.373v6.924c-.866 0-1.569-.702-1.569-1.569v-5.355h-.648v-1.434h.648v-2.805h1.57zm10.9 0v2.806h1.372v1.434h-1.373v6.924c-.866 0-1.569-.702-1.569-1.569v-5.355h-.648v-1.434h.648v-2.805h1.57zm16.384 2.58v1.615c-1.358.045-2.052.874-2.052 2.277v3.123c0 .867-.702 1.57-1.569 1.57v-8.359h1.463v.755h.03c.378-.558 1.026-.92 2.128-.98zm-35.16 1.433c-1.798 0-3.32 1.746-2.835 3.691.33 1.319 1.532 2.274 2.891 2.237 1.605-.044 2.902-1.326 2.902-2.986 0-1.63-1.313-2.942-2.957-2.942zm25.067 0c-1.657 0-2.994 1.496-2.84 3.264.127 1.457 1.318 2.635 2.78 2.664 1.658.034 2.971-1.337 2.971-2.94 0-1.63-1.177-2.988-2.911-2.988z" transform="translate(2 1.313)"/>
                 </g>
             </svg>
-
+            <Typography className={styles.navItems}>
+              <ul>
+                <li className={styles.dropdown}>TV</li>
+                <li className={styles.dropdown}>Movies</li>
+                <li className={styles.dropdown}>Sports</li>
+                <li className={styles.dropdown}>Premium</li>
+                <li className={styles.dropdown}>Disney+</li>
+                <li className={styles.dropdown}>Kids</li>
+                
+              </ul>
+            </Typography>
           </Typography>
           
           <div className={classes.search}>
@@ -134,7 +145,10 @@ const Navbar = () => {
               }}
               inputProps={{ 'aria-label': 'search' }}
             />
+            
           </div>
+          <button className={styles.Subscribe}>SUBSCRIBE</button>
+          <div className ={styles.SignIn}>LOGIN</div>
         </Toolbar>
       </AppBar>
     </div>    

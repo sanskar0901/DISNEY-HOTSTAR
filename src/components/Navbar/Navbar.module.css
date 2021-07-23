@@ -1,5 +1,5 @@
 .AppBar{
-    background: #192133 !important;
+    background: #131A27 !important;
    
 }
 
@@ -27,21 +27,89 @@
 
 .dropdownContent a {
   float: none;
-  color: black;
+  color:#ffffffcc;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
+  background:#192133;
 }
 
 .dropdownContent a:hover {
-  background-color: #ddd;
+  background-color: #0c111b;
 }
-
+.dropdown:hover {
+  overflow:visible;
+}
 .dropdown:hover .dropdownContent {
   display: block;
+
 }
 
 .mobile{
     display: none !important;
+}
+.Subscribe{
+
+    outline: none;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    background: #1f80e0;
+    border: none;
+    outline: 0;
+    color: #fff;
+    outline-color: transparent;
+    position: relative;
+    outline: none !important;
+    font-size: 12px;
+    margin: 15px 0 15px 20px;
+    padding: 0 12px;
+    letter-spacing: 0.4px;
+    font-weight: 700;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 4px;
+
+}
+.SignIn{
+  font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffffcc;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    padding: 13px 0;
+    margin-left: 15px;
+    opacity: 1;
+    font-size: 14px;
+}
+.navItems{
+  width: 100%;
+  margin: 15px !important;
+  display: flex;
+}
+.navItems ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navItems li {
+  display: inline;}
+.navItems li  {
+  margin-right: 20px;
+  text-decoration: none !important;
+  outline: none;
+  color: #ffffffcc;
+  margin-left:auto;
+
+}
+.navItems li:hover {
+  color: #fff;
+}
+@media (max-width:425px){
+  .dropdown{
+      display:none !important;
+  }
 }
