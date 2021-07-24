@@ -7,6 +7,11 @@ import {
 } from "react-router-dom";
 
 
+
+
+
+
+import Banner from './components/Body/Banner/Banner'
 import Navbar from './components/Navbar/Navbar.jsx'
 import './App.css';
 
@@ -16,10 +21,12 @@ function App() {
     <div className="App">
      
      <Navbar/>
+     <Banner/>
      <Router>
        <Switch>
-          <Route  path="/Home">
-            
+          <Route  path="/">
+          
+        
           </Route>
           <Route exact path="/about">
             

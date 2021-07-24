@@ -11,12 +11,7 @@ const useStyles = makeStyles((theme) => ({
    root: {
        flexGrow: 1,
    },
-   list: {
-    width: 250,
-  },
-  fullList: {
-    width: 'auto',
-  },
+   
    title: {
     flexGrow: 1,
     alignItems: 'center',
@@ -63,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
           width: '20ch',
         },
       },
-    },
+   },
   }));
 
 const Navbar = () => {
@@ -77,7 +72,7 @@ const Navbar = () => {
         <Router>
            <div className={classes.root}>
         <AppBar position="static" className={styles.AppBar}>
-        <Toolbar>
+        <Toolbar >
           <IconButton
             edge="start"
             className={styles.dropdown}
@@ -87,9 +82,9 @@ const Navbar = () => {
             <MenuIcon />
            
             <div className ={styles.dropdownContent}>
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
+                    <Link to='/channels'>Channels</Link>
+                    <Link to='/Languages'>Languages</Link>
+                    <Link to='/Genres'>Genres</Link>
                     </div>   
           </IconButton>
           <MobileDrawer />      

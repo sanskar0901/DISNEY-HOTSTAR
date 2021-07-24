@@ -1,0 +1,23 @@
+.mastheadarea{
+    min-height: calc(1170px * .34188);
+    position: relative;
+}
+
+
+
+
+@media only screen and (max-width: 1170px){
+
+    .landing-page .masthead-area {
+        min-height: calc(100vw * .34188);
+        margin-bottom: 5px;
+        background-color: transparent;
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+.masthead {
+    margin-top: 0;
+}
+}
